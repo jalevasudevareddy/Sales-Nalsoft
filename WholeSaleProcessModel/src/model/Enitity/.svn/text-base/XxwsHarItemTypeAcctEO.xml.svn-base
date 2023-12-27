@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="XxwsHarItemTypeAcctEO"
+  Version="11.1.1.66.73"
+  InheritPersonalization="merge"
+  DBObjectType="table"
+  DBObjectName="XXWS_HAR_ITEM_TYPE_ACCNT_T"
+  AliasName="XxwsHarItemTypeAcctEO"
+  BindingStyle="OracleName"
+  UseGlueCode="false"
+  RowClass="model.Enitity.XxwsHarItemTypeAcctEOImpl">
+  <DesignTime>
+    <Attr Name="_codeGenFlag2" Value="Access"/>
+    <AttrArray Name="_publishEvents"/>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <Attribute
+    Name="SetupId"
+    IsNotNull="true"
+    Precision="18"
+    Scale="0"
+    ColumnName="SETUP_ID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="XXWS_HAR_ITEM_TYPE_ACCNT_T"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="19"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="BuId"
+    IsNotNull="true"
+    ColumnName="BU_ID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="XXWS_HAR_ITEM_TYPE_ACCNT_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ItemTypeCode"
+    IsNotNull="true"
+    Precision="30"
+    ColumnName="ITEM_TYPE_CODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="XXWS_HAR_ITEM_TYPE_ACCNT_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CogsAccnt"
+    IsNotNull="true"
+    Precision="18"
+    Scale="0"
+    ColumnName="COGS_ACCNT"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="XXWS_HAR_ITEM_TYPE_ACCNT_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="19"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="RevenueAccnt"
+    IsNotNull="true"
+    Precision="18"
+    Scale="0"
+    ColumnName="REVENUE_ACCNT"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="XXWS_HAR_ITEM_TYPE_ACCNT_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="19"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="StartDate"
+    IsNotNull="true"
+    ColumnName="START_DATE"
+    SQLType="TIMESTAMP"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    TableName="XXWS_HAR_ITEM_TYPE_ACCNT_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="EndDate"
+    ColumnName="END_DATE"
+    SQLType="TIMESTAMP"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    TableName="XXWS_HAR_ITEM_TYPE_ACCNT_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreatedBy"
+    IsNotNull="true"
+    Precision="64"
+    ColumnName="CREATED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="XXWS_HAR_ITEM_TYPE_ACCNT_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="64"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreationDate"
+    IsNotNull="true"
+    ColumnName="CREATION_DATE"
+    SQLType="TIMESTAMP"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    TableName="XXWS_HAR_ITEM_TYPE_ACCNT_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LastUpdatedBy"
+    IsNotNull="true"
+    Precision="64"
+    ColumnName="LAST_UPDATED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="XXWS_HAR_ITEM_TYPE_ACCNT_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="64"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LastUpdateDate"
+    IsNotNull="true"
+    ColumnName="LAST_UPDATE_DATE"
+    SQLType="TIMESTAMP"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    TableName="XXWS_HAR_ITEM_TYPE_ACCNT_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ObjectVersionNumber"
+    IsNotNull="true"
+    ColumnName="OBJECT_VERSION_NUMBER"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="XXWS_HAR_ITEM_TYPE_ACCNT_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
+  <Key
+    Name="SysC0020816">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020816"/>
+      <Attr Name="_checkCondition" Value='"SETUP_ID" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsHarItemTypeAcctEO.SetupId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020817">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020817"/>
+      <Attr Name="_checkCondition" Value='"BU_ID" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsHarItemTypeAcctEO.BuId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020818">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020818"/>
+      <Attr Name="_checkCondition" Value='"ITEM_TYPE_CODE" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsHarItemTypeAcctEO.ItemTypeCode"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020819">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020819"/>
+      <Attr Name="_checkCondition" Value='"COGS_ACCNT" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsHarItemTypeAcctEO.CogsAccnt"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020820">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020820"/>
+      <Attr Name="_checkCondition" Value='"REVENUE_ACCNT" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsHarItemTypeAcctEO.RevenueAccnt"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020821">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020821"/>
+      <Attr Name="_checkCondition" Value='"START_DATE" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsHarItemTypeAcctEO.StartDate"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020822">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020822"/>
+      <Attr Name="_checkCondition" Value='"CREATED_BY" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsHarItemTypeAcctEO.CreatedBy"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020823">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020823"/>
+      <Attr Name="_checkCondition" Value='"CREATION_DATE" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsHarItemTypeAcctEO.CreationDate"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020824">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020824"/>
+      <Attr Name="_checkCondition" Value='"LAST_UPDATED_BY" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsHarItemTypeAcctEO.LastUpdatedBy"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020825">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020825"/>
+      <Attr Name="_checkCondition" Value='"LAST_UPDATE_DATE" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsHarItemTypeAcctEO.LastUpdateDate"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020826">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020826"/>
+      <Attr Name="_checkCondition" Value='"OBJECT_VERSION_NUMBER" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsHarItemTypeAcctEO.ObjectVersionNumber"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="XxwsharitemtypeaccteoPrimaryKey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="XXWSHARITEMTYPEACCTEO_PRIMARY_"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsHarItemTypeAcctEO.SetupId"/>
+    </AttrArray>
+  </Key>
+</Entity>

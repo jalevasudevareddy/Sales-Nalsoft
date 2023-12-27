@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <af:panelHeader text="Item Type Wise Natural Account Mapping" id="ph1">
+    <f:facet name="context"/>
+    <f:facet name="menuBar"/>
+    <f:facet name="toolbar"/>
+    <f:facet name="legend"/>
+    <f:facet name="info"/>
+    <af:panelFormLayout id="pfl1" maxColumns="3">
+      <af:inputComboboxListOfValues id="transBU_NameId"
+                                    popupTitle="Search and Select: #{bindings.TransBU_Name.hints.label}"
+                                    value="#{bindings.TransBU_Name.inputValue}"
+                                    label="#{bindings.TransBU_Name.hints.label}"
+                                    model="#{bindings.TransBU_Name.listOfValuesModel}"
+                                    required="#{bindings.TransBU_Name.hints.mandatory}"
+                                    columns="#{bindings.TransBU_Name.hints.displayWidth}"
+                                    shortDesc="#{bindings.TransBU_Name.hints.tooltip}">
+        <f:validator binding="#{bindings.TransBU_Name.validator}"/>
+      </af:inputComboboxListOfValues>
+    </af:panelFormLayout>
+  </af:panelHeader>
+  <af:panelCollection id="pc1" styleClass="AFStretchWidth">
+    <f:facet name="menus"/>
+    <f:facet name="toolbar">
+      <af:toolbar id="t2">
+        <af:commandButton text="Add" id="cb1"/>
+      </af:toolbar>
+    </f:facet>
+    <f:facet name="statusbar"/>
+    <af:table value="#{bindings.XxwsHarItemTypeAcctVO1.collectionModel}"
+              var="row" rows="#{bindings.XxwsHarItemTypeAcctVO1.rangeSize}"
+              emptyText="#{bindings.XxwsHarItemTypeAcctVO1.viewable ? 'No data to display.' : 'Access Denied.'}"
+              fetchSize="#{bindings.XxwsHarItemTypeAcctVO1.rangeSize}"
+              rowBandingInterval="0"
+              filterModel="#{bindings.XxwsHarItemTypeAcctVO1Query.queryDescriptor}"
+              queryListener="#{bindings.XxwsHarItemTypeAcctVO1Query.processQuery}"
+              filterVisible="false" varStatus="vs"
+              selectedRowKeys="#{bindings.XxwsHarItemTypeAcctVO1.collectionModel.selectedRow}"
+              selectionListener="#{bindings.XxwsHarItemTypeAcctVO1.collectionModel.makeCurrent}"
+              rowSelection="single" id="t1" partialTriggers=":::transBU_NameId"
+              styleClass="AFStretchWidth">
+      <af:column sortProperty="#{bindings.XxwsHarItemTypeAcctVO1.hints.ItemTypeCode.name}"
+                 filterable="true" sortable="true"
+                 headerText="#{bindings.XxwsHarItemTypeAcctVO1.hints.ItemTypeCode.label}"
+                 id="c2">
+        <af:inputText value="#{row.bindings.ItemTypeCode.inputValue}"
+                      label="#{bindings.XxwsHarItemTypeAcctVO1.hints.ItemTypeCode.label}"
+                      required="#{bindings.XxwsHarItemTypeAcctVO1.hints.ItemTypeCode.mandatory}"
+                      columns="#{bindings.XxwsHarItemTypeAcctVO1.hints.ItemTypeCode.displayWidth}"
+                      maximumLength="#{bindings.XxwsHarItemTypeAcctVO1.hints.ItemTypeCode.precision}"
+                      shortDesc="#{bindings.XxwsHarItemTypeAcctVO1.hints.ItemTypeCode.tooltip}"
+                      id="it2">
+          <f:validator binding="#{row.bindings.ItemTypeCode.validator}"/>
+        </af:inputText>
+      </af:column>
+      <af:column sortProperty="#{bindings.XxwsHarItemTypeAcctVO1.hints.CogsAccnt.name}"
+                 filterable="true" sortable="true"
+                 headerText="#{bindings.XxwsHarItemTypeAcctVO1.hints.CogsAccnt.label}"
+                 id="c5">
+        <af:inputText value="#{row.bindings.CogsAccnt.inputValue}"
+                      label="#{bindings.XxwsHarItemTypeAcctVO1.hints.CogsAccnt.label}"
+                      required="#{bindings.XxwsHarItemTypeAcctVO1.hints.CogsAccnt.mandatory}"
+                      columns="#{bindings.XxwsHarItemTypeAcctVO1.hints.CogsAccnt.displayWidth}"
+                      maximumLength="#{bindings.XxwsHarItemTypeAcctVO1.hints.CogsAccnt.precision}"
+                      shortDesc="#{bindings.XxwsHarItemTypeAcctVO1.hints.CogsAccnt.tooltip}"
+                      id="it3">
+          <f:validator binding="#{row.bindings.CogsAccnt.validator}"/>
+          <af:convertNumber groupingUsed="false"
+                            pattern="#{bindings.XxwsHarItemTypeAcctVO1.hints.CogsAccnt.format}"/>
+        </af:inputText>
+      </af:column>
+      <af:column sortProperty="#{bindings.XxwsHarItemTypeAcctVO1.hints.RevenueAccnt.name}"
+                 filterable="true" sortable="true"
+                 headerText="#{bindings.XxwsHarItemTypeAcctVO1.hints.RevenueAccnt.label}"
+                 id="c4">
+        <af:inputText value="#{row.bindings.RevenueAccnt.inputValue}"
+                      label="#{bindings.XxwsHarItemTypeAcctVO1.hints.RevenueAccnt.label}"
+                      required="#{bindings.XxwsHarItemTypeAcctVO1.hints.RevenueAccnt.mandatory}"
+                      columns="#{bindings.XxwsHarItemTypeAcctVO1.hints.RevenueAccnt.displayWidth}"
+                      maximumLength="#{bindings.XxwsHarItemTypeAcctVO1.hints.RevenueAccnt.precision}"
+                      shortDesc="#{bindings.XxwsHarItemTypeAcctVO1.hints.RevenueAccnt.tooltip}"
+                      id="it1">
+          <f:validator binding="#{row.bindings.RevenueAccnt.validator}"/>
+          <af:convertNumber groupingUsed="false"
+                            pattern="#{bindings.XxwsHarItemTypeAcctVO1.hints.RevenueAccnt.format}"/>
+        </af:inputText>
+      </af:column>
+      <af:column sortProperty="#{bindings.XxwsHarItemTypeAcctVO1.hints.StartDate.name}"
+                 filterable="true" sortable="true"
+                 headerText="#{bindings.XxwsHarItemTypeAcctVO1.hints.StartDate.label}"
+                 id="c3">
+        <f:facet name="filter">
+          <af:inputDate value="#{vs.filterCriteria.StartDate}" id="id2"/>
+        </f:facet>
+        <af:inputDate value="#{row.bindings.StartDate.inputValue}"
+                      label="#{bindings.XxwsHarItemTypeAcctVO1.hints.StartDate.label}"
+                      required="#{bindings.XxwsHarItemTypeAcctVO1.hints.StartDate.mandatory}"
+                      shortDesc="#{bindings.XxwsHarItemTypeAcctVO1.hints.StartDate.tooltip}"
+                      id="id3">
+          <f:validator binding="#{row.bindings.StartDate.validator}"/>
+          <af:convertDateTime pattern="#{bindings.XxwsHarItemTypeAcctVO1.hints.StartDate.format}"/>
+        </af:inputDate>
+      </af:column>
+      <af:column sortProperty="#{bindings.XxwsHarItemTypeAcctVO1.hints.EndDate.name}"
+                 filterable="true" sortable="true"
+                 headerText="#{bindings.XxwsHarItemTypeAcctVO1.hints.EndDate.label}"
+                 id="c1">
+        <f:facet name="filter">
+          <af:inputDate value="#{vs.filterCriteria.EndDate}" id="id4"/>
+        </f:facet>
+        <af:inputDate value="#{row.bindings.EndDate.inputValue}"
+                      label="#{bindings.XxwsHarItemTypeAcctVO1.hints.EndDate.label}"
+                      required="#{bindings.XxwsHarItemTypeAcctVO1.hints.EndDate.mandatory}"
+                      shortDesc="#{bindings.XxwsHarItemTypeAcctVO1.hints.EndDate.tooltip}"
+                      id="id1">
+          <f:validator binding="#{row.bindings.EndDate.validator}"/>
+          <af:convertDateTime pattern="#{bindings.XxwsHarItemTypeAcctVO1.hints.EndDate.format}"/>
+        </af:inputDate>
+      </af:column>
+    </af:table>
+  </af:panelCollection>
+</jsp:root>

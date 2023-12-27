@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="AccountMappingTF">
+    <default-activity id="__1">createTransBuCustAcctMapping</default-activity>
+    <managed-bean id="__3">
+      <managed-bean-name id="__4">AccountMappingBean</managed-bean-name>
+      <managed-bean-class id="__2">bean.AccountMappingBean</managed-bean-class>
+      <managed-bean-scope id="__5">backingBean</managed-bean-scope>
+    </managed-bean>
+    <view id="AccountMappingPage">
+      <page>/pageFragments/AccountMappingPage.jsff</page>
+    </view>
+    <method-call id="createTransBuCustAcctMapping">
+      <method>#{bindings.createTransBuCustAcctMapping.execute}</method>
+      <outcome id="__6">
+        <fixed-outcome>createTransBuCustAcctMapping</fixed-outcome>
+      </outcome>
+    </method-call>
+    <control-flow-rule id="__7">
+      <from-activity-id id="__8">createTransBuCustAcctMapping</from-activity-id>
+      <control-flow-case id="__9">
+        <from-outcome id="__10">createTransBuCustAcctMapping</from-outcome>
+        <to-activity-id id="__11">AccountMappingPage</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application"
+             version="11.1.1.66.73" id="DataBindings" SeparateXMLFiles="false"
+             Package="view" ClientType="Generic">
+  <definitionFactories>
+    <factory nameSpace="http://xmlns.oracle.com/adf/controller/binding"
+             className="oracle.adf.controller.internal.binding.TaskFlowBindingDefFactoryImpl"/>
+    <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
+  </definitionFactories>
+  <pageMap>
+    <page path="/WholeSaleProcessHome.jspx"
+          usageId="view_WholeSaleProcessHomePageDef"/>
+    <page path="/pageFragments/AccountMappingPage.jsff"
+          usageId="view_AccountMappingPagePageDef"/>
+    <page path="/pageFragments/ItemTypeAcctPage.jsff"
+          usageId="view_ItemTypeAcctPagePageDef"/>
+    <page path="/WEB-INF/ItemTypeAcctTF.xml#ItemTypeAcctTF@createTransBuItemType"
+          usageId="view_ItemTypeAcctTF_ItemTypeAcctTF_createTransBuItemTypePageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="view_WholeSaleProcessHomePageDef"
+          path="view.pageDefs.WholeSaleProcessHomePageDef"/>
+    <page id="view_AccountMappingPagePageDef"
+          path="pageFragments.AccountMappingPagePageDef"/>
+    <page id="view_ItemTypeAcctPagePageDef"
+          path="pageFragments.ItemTypeAcctPagePageDef"/>
+    <page id="view_ItemTypeAcctTF_ItemTypeAcctTF_createTransBuItemTypePageDef"
+          path="view.pageDefs.ItemTypeAcctTF_ItemTypeAcctTF_createTransBuItemTypePageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="WholeSaleProcessAMDataControl"
+                     Package="model.applicationModule"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+                     SupportsTransactions="true" SupportsFindMode="true"
+                     SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true"
+                     Configuration="WholeSaleProcessAMLocal"
+                     syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>

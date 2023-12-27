@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="XxwsVasCustAcctMappingEO"
+  Version="11.1.1.66.73"
+  InheritPersonalization="merge"
+  DBObjectType="table"
+  DBObjectName="XXWS_VAS_CUST_ACCT_MAPPING_T"
+  AliasName="XxwsVasCustAcctMappingEO"
+  BindingStyle="OracleName"
+  UseGlueCode="false"
+  RowClass="model.Enitity.XxwsVasCustAcctMappingEOImpl">
+  <DesignTime>
+    <Attr Name="_codeGenFlag2" Value="Access"/>
+    <AttrArray Name="_publishEvents"/>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <Attribute
+    Name="SetupId"
+    IsNotNull="true"
+    ColumnName="SETUP_ID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="XXWS_VAS_CUST_ACCT_MAPPING_T"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="BuId"
+    IsNotNull="true"
+    ColumnName="BU_ID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="XXWS_VAS_CUST_ACCT_MAPPING_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CustAccountId"
+    IsNotNull="true"
+    ColumnName="CUST_ACCOUNT_ID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="XXWS_VAS_CUST_ACCT_MAPPING_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CogsCcid"
+    IsNotNull="true"
+    ColumnName="COGS_CCID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="XXWS_VAS_CUST_ACCT_MAPPING_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="SalesCcid"
+    IsNotNull="true"
+    ColumnName="SALES_CCID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="XXWS_VAS_CUST_ACCT_MAPPING_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ReceivableCcid"
+    IsNotNull="true"
+    ColumnName="RECEIVABLE_CCID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="XXWS_VAS_CUST_ACCT_MAPPING_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="DiscountCcid"
+    IsNotNull="true"
+    ColumnName="DISCOUNT_CCID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="XXWS_VAS_CUST_ACCT_MAPPING_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="SponsorshipCcid"
+    IsNotNull="true"
+    ColumnName="SPONSORSHIP_CCID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="XXWS_VAS_CUST_ACCT_MAPPING_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="TaxCode"
+    IsNotNull="true"
+    Precision="50"
+    ColumnName="TAX_CODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="XXWS_VAS_CUST_ACCT_MAPPING_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="50"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="StartDate"
+    IsNotNull="true"
+    ColumnName="START_DATE"
+    SQLType="TIMESTAMP"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    TableName="XXWS_VAS_CUST_ACCT_MAPPING_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="EndDate"
+    ColumnName="END_DATE"
+    SQLType="TIMESTAMP"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    TableName="XXWS_VAS_CUST_ACCT_MAPPING_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreatedBy"
+    IsNotNull="true"
+    Precision="64"
+    ColumnName="CREATED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="XXWS_VAS_CUST_ACCT_MAPPING_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="64"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreationDate"
+    IsNotNull="true"
+    ColumnName="CREATION_DATE"
+    SQLType="TIMESTAMP"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    TableName="XXWS_VAS_CUST_ACCT_MAPPING_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LastUpdatedBy"
+    IsNotNull="true"
+    Precision="64"
+    ColumnName="LAST_UPDATED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="XXWS_VAS_CUST_ACCT_MAPPING_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="64"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LastUpdateDate"
+    IsNotNull="true"
+    ColumnName="LAST_UPDATE_DATE"
+    SQLType="TIMESTAMP"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    TableName="XXWS_VAS_CUST_ACCT_MAPPING_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ObjectVersionNumber"
+    IsNotNull="true"
+    ColumnName="OBJECT_VERSION_NUMBER"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="XXWS_VAS_CUST_ACCT_MAPPING_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
+  <Key
+    Name="SysC0020827">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020827"/>
+      <Attr Name="_checkCondition" Value='"SETUP_ID" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsVasCustAcctMappingEO.SetupId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020828">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020828"/>
+      <Attr Name="_checkCondition" Value='"BU_ID" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsVasCustAcctMappingEO.BuId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020829">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020829"/>
+      <Attr Name="_checkCondition" Value='"CUST_ACCOUNT_ID" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsVasCustAcctMappingEO.CustAccountId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020830">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020830"/>
+      <Attr Name="_checkCondition" Value='"COGS_CCID" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsVasCustAcctMappingEO.CogsCcid"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020831">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020831"/>
+      <Attr Name="_checkCondition" Value='"SALES_CCID" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsVasCustAcctMappingEO.SalesCcid"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020832">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020832"/>
+      <Attr Name="_checkCondition" Value='"RECEIVABLE_CCID" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsVasCustAcctMappingEO.ReceivableCcid"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020833">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020833"/>
+      <Attr Name="_checkCondition" Value='"DISCOUNT_CCID" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsVasCustAcctMappingEO.DiscountCcid"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020834">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020834"/>
+      <Attr Name="_checkCondition" Value='"SPONSORSHIP_CCID" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsVasCustAcctMappingEO.SponsorshipCcid"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020835">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020835"/>
+      <Attr Name="_checkCondition" Value='"TAX_CODE" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsVasCustAcctMappingEO.TaxCode"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020836">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020836"/>
+      <Attr Name="_checkCondition" Value='"START_DATE" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsVasCustAcctMappingEO.StartDate"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020837">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020837"/>
+      <Attr Name="_checkCondition" Value='"CREATED_BY" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsVasCustAcctMappingEO.CreatedBy"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020838">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020838"/>
+      <Attr Name="_checkCondition" Value='"CREATION_DATE" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsVasCustAcctMappingEO.CreationDate"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020839">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020839"/>
+      <Attr Name="_checkCondition" Value='"LAST_UPDATED_BY" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsVasCustAcctMappingEO.LastUpdatedBy"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020840">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020840"/>
+      <Attr Name="_checkCondition" Value='"LAST_UPDATE_DATE" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsVasCustAcctMappingEO.LastUpdateDate"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0020841">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0020841"/>
+      <Attr Name="_checkCondition" Value='"OBJECT_VERSION_NUMBER" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsVasCustAcctMappingEO.ObjectVersionNumber"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="XxwsvascustacctmappingeoPrimaryKey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="XXWSVASCUSTACCTMAPPINGEO_PRIMA"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.Enitity.XxwsVasCustAcctMappingEO.SetupId"/>
+    </AttrArray>
+  </Key>
+</Entity>

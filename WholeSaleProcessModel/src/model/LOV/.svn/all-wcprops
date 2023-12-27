@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/training/!svn/ver/209/Wholesale3/WholeSaleProcessApp/WholeSaleProcessModel/src/model/LOV
+END
+XxwsVasCustomerNameLOVImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/training/!svn/ver/209/Wholesale3/WholeSaleProcessApp/WholeSaleProcessModel/src/model/LOV/XxwsVasCustomerNameLOVImpl.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/training/!svn/ver/91/Wholesale3/WholeSaleProcessApp/WholeSaleProcessModel/src/model/LOV/package.html
+END
+XxwsVasCustomerNameLOVRowImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/training/!svn/ver/214/Wholesale3/WholeSaleProcessApp/WholeSaleProcessModel/src/model/LOV/XxwsVasCustomerNameLOVRowImpl.java
+END
+XxwsVasCustomerNameLOV.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/training/!svn/ver/209/Wholesale3/WholeSaleProcessApp/WholeSaleProcessModel/src/model/LOV/XxwsVasCustomerNameLOV.xml
+END
+XxwsBusinessUnitLOVRowImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/training/!svn/ver/115/Wholesale3/WholeSaleProcessApp/WholeSaleProcessModel/src/model/LOV/XxwsBusinessUnitLOVRowImpl.java
+END
+XxwsBusinessUnitLOV.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/training/!svn/ver/115/Wholesale3/WholeSaleProcessApp/WholeSaleProcessModel/src/model/LOV/XxwsBusinessUnitLOV.xml
+END
+XxwsBusinessUnitLOVImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/training/!svn/ver/115/Wholesale3/WholeSaleProcessApp/WholeSaleProcessModel/src/model/LOV/XxwsBusinessUnitLOVImpl.java
+END

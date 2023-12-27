@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="AccountMappingTF">
+    <default-activity id="__1">AccountMappingPage</default-activity>
+    <managed-bean id="__3">
+      <managed-bean-name id="__4">AccountMappingBean</managed-bean-name>
+      <managed-bean-class id="__2">bean.AccountMappingBean</managed-bean-class>
+      <managed-bean-scope id="__5">backingBean</managed-bean-scope>
+    </managed-bean>
+    <view id="AccountMappingPage">
+      <page>/pageFragments/AccountMappingPage.jsff</page>
+    </view>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

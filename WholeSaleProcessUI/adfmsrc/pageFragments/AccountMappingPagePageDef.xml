@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.66.73" id="AccountMappingPagePageDef"
+                Package="pageFragments">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="TransBU_VO3" RangeSize="25"
+              DataControl="WholeSaleProcessAMDataControl"
+              id="TransBU_VO3Iterator"/>
+    <iterator Binds="XxwsVasCustAcctMappingVO2" RangeSize="25"
+              DataControl="WholeSaleProcessAMDataControl"
+              id="XxwsVasCustAcctMappingVO2Iterator"/>
+    <searchRegion Binds="XxwsVasCustAcctMappingVO2Iterator" Criteria=""
+                  Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer"
+                  id="XxwsVasCustAcctMappingVO2Query"/>
+  </executables>
+  <bindings>
+    <listOfValues StaticList="false" IterBinding="TransBU_VO3Iterator"
+                  Uses="LOV_TransBU_Name" id="TransBU_Name"/>
+    <tree IterBinding="XxwsVasCustAcctMappingVO2Iterator"
+          id="XxwsVasCustAcctMappingVO2">
+      <nodeDefinition DefName="model.View.XxwsVasCustAcctMappingVO"
+                      Name="XxwsVasCustAcctMappingVO20">
+        <AttrNames>
+          <Item Value="BuId"/>
+          <Item Value="CustAccountId"/>
+          <Item Value="CogsCcid"/>
+          <Item Value="SalesCcid"/>
+          <Item Value="ReceivableCcid"/>
+          <Item Value="DiscountCcid"/>
+          <Item Value="SponsorshipCcid"/>
+          <Item Value="TaxCode"/>
+          <Item Value="StartDate"/>
+          <Item Value="EndDate"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>

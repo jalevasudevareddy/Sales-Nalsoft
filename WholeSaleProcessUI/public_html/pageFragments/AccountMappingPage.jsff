@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <af:panelHeader text="panelHeader 1" id="ph1">
+    <f:facet name="context"/>
+    <f:facet name="menuBar"/>
+    <f:facet name="toolbar"/>
+    <f:facet name="legend"/>
+    <f:facet name="info"/>
+    <af:panelFormLayout id="pfl1">
+      <af:inputComboboxListOfValues id="transBU_NameId"
+                                    popupTitle="Search and Select: #{bindings.TransBU_Name.hints.label}"
+                                    value="#{bindings.TransBU_Name.inputValue}"
+                                    label="#{bindings.TransBU_Name.hints.label}"
+                                    model="#{bindings.TransBU_Name.listOfValuesModel}"
+                                    required="#{bindings.TransBU_Name.hints.mandatory}"
+                                    columns="#{bindings.TransBU_Name.hints.displayWidth}"
+                                    shortDesc="#{bindings.TransBU_Name.hints.tooltip}">
+        <f:validator binding="#{bindings.TransBU_Name.validator}"/>
+      </af:inputComboboxListOfValues>
+    </af:panelFormLayout>
+  </af:panelHeader>
+  <af:panelCollection id="pc1">
+    <f:facet name="menus"/>
+    <f:facet name="toolbar"/>
+    <f:facet name="statusbar"/>
+    <af:table value="#{bindings.XxwsVasCustAcctMappingVO2.collectionModel}"
+              var="row" rows="#{bindings.XxwsVasCustAcctMappingVO2.rangeSize}"
+              emptyText="#{bindings.XxwsVasCustAcctMappingVO2.viewable ? 'No data to display.' : 'Access Denied.'}"
+              fetchSize="#{bindings.XxwsVasCustAcctMappingVO2.rangeSize}"
+              rowBandingInterval="0"
+              filterModel="#{bindings.XxwsVasCustAcctMappingVO2Query.queryDescriptor}"
+              queryListener="#{bindings.XxwsVasCustAcctMappingVO2Query.processQuery}"
+              filterVisible="true" varStatus="vs"
+              selectedRowKeys="#{bindings.XxwsVasCustAcctMappingVO2.collectionModel.selectedRow}"
+              selectionListener="#{bindings.XxwsVasCustAcctMappingVO2.collectionModel.makeCurrent}"
+              rowSelection="single" id="t1" partialTriggers=":::transBU_NameId">
+      <af:column sortProperty="#{bindings.XxwsVasCustAcctMappingVO2.hints.BuId.name}"
+                 filterable="true" sortable="true"
+                 headerText="#{bindings.XxwsVasCustAcctMappingVO2.hints.BuId.label}"
+                 id="c7">
+        <af:inputText value="#{row.bindings.BuId.inputValue}"
+                      label="#{bindings.XxwsVasCustAcctMappingVO2.hints.BuId.label}"
+                      required="#{bindings.XxwsVasCustAcctMappingVO2.hints.BuId.mandatory}"
+                      columns="#{bindings.XxwsVasCustAcctMappingVO2.hints.BuId.displayWidth}"
+                      maximumLength="#{bindings.XxwsVasCustAcctMappingVO2.hints.BuId.precision}"
+                      shortDesc="#{bindings.XxwsVasCustAcctMappingVO2.hints.BuId.tooltip}"
+                      id="it2">
+          <f:validator binding="#{row.bindings.BuId.validator}"/>
+          <af:convertNumber groupingUsed="false"
+                            pattern="#{bindings.XxwsVasCustAcctMappingVO2.hints.BuId.format}"/>
+        </af:inputText>
+      </af:column>
+      <af:column sortProperty="#{bindings.XxwsVasCustAcctMappingVO2.hints.CustAccountId.name}"
+                 filterable="true" sortable="true"
+                 headerText="#{bindings.XxwsVasCustAcctMappingVO2.hints.CustAccountId.label}"
+                 id="c10">
+        <af:inputComboboxListOfValues id="custAccountIdId"
+                                      popupTitle="Search and Select: #{bindings.XxwsVasCustAcctMappingVO2.hints.CustAccountId.label}"
+                                      value="#{row.bindings.CustAccountId.inputValue}"
+                                      model="#{row.bindings.CustAccountId.listOfValuesModel}"
+                                      required="#{bindings.XxwsVasCustAcctMappingVO2.hints.CustAccountId.mandatory}"
+                                      columns="#{bindings.XxwsVasCustAcctMappingVO2.hints.CustAccountId.displayWidth}"
+                                      shortDesc="#{bindings.XxwsVasCustAcctMappingVO2.hints.CustAccountId.tooltip}">
+          <f:validator binding="#{row.bindings.CustAccountId.validator}"/>
+          <af:convertNumber groupingUsed="false"
+                            pattern="#{bindings.XxwsVasCustAcctMappingVO2.hints.CustAccountId.format}"/>
+        </af:inputComboboxListOfValues>
+      </af:column>
+      <af:column sortProperty="#{bindings.XxwsVasCustAcctMappingVO2.hints.CogsCcid.name}"
+                 filterable="true" sortable="true"
+                 headerText="#{bindings.XxwsVasCustAcctMappingVO2.hints.CogsCcid.label}"
+                 id="c1">
+        <af:inputText value="#{row.bindings.CogsCcid.inputValue}"
+                      label="#{bindings.XxwsVasCustAcctMappingVO2.hints.CogsCcid.label}"
+                      required="#{bindings.XxwsVasCustAcctMappingVO2.hints.CogsCcid.mandatory}"
+                      columns="#{bindings.XxwsVasCustAcctMappingVO2.hints.CogsCcid.displayWidth}"
+                      maximumLength="#{bindings.XxwsVasCustAcctMappingVO2.hints.CogsCcid.precision}"
+                      shortDesc="#{bindings.XxwsVasCustAcctMappingVO2.hints.CogsCcid.tooltip}"
+                      id="it1">
+          <f:validator binding="#{row.bindings.CogsCcid.validator}"/>
+          <af:convertNumber groupingUsed="false"
+                            pattern="#{bindings.XxwsVasCustAcctMappingVO2.hints.CogsCcid.format}"/>
+        </af:inputText>
+      </af:column>
+      <af:column sortProperty="#{bindings.XxwsVasCustAcctMappingVO2.hints.SalesCcid.name}"
+                 filterable="true" sortable="true"
+                 headerText="#{bindings.XxwsVasCustAcctMappingVO2.hints.SalesCcid.label}"
+                 id="c2">
+        <af:inputText value="#{row.bindings.SalesCcid.inputValue}"
+                      label="#{bindings.XxwsVasCustAcctMappingVO2.hints.SalesCcid.label}"
+                      required="#{bindings.XxwsVasCustAcctMappingVO2.hints.SalesCcid.mandatory}"
+                      columns="#{bindings.XxwsVasCustAcctMappingVO2.hints.SalesCcid.displayWidth}"
+                      maximumLength="#{bindings.XxwsVasCustAcctMappingVO2.hints.SalesCcid.precision}"
+                      shortDesc="#{bindings.XxwsVasCustAcctMappingVO2.hints.SalesCcid.tooltip}"
+                      id="it6">
+          <f:validator binding="#{row.bindings.SalesCcid.validator}"/>
+          <af:convertNumber groupingUsed="false"
+                            pattern="#{bindings.XxwsVasCustAcctMappingVO2.hints.SalesCcid.format}"/>
+        </af:inputText>
+      </af:column>
+      <af:column sortProperty="#{bindings.XxwsVasCustAcctMappingVO2.hints.ReceivableCcid.name}"
+                 filterable="true" sortable="true"
+                 headerText="#{bindings.XxwsVasCustAcctMappingVO2.hints.ReceivableCcid.label}"
+                 id="c8">
+        <af:inputText value="#{row.bindings.ReceivableCcid.inputValue}"
+                      label="#{bindings.XxwsVasCustAcctMappingVO2.hints.ReceivableCcid.label}"
+                      required="#{bindings.XxwsVasCustAcctMappingVO2.hints.ReceivableCcid.mandatory}"
+                      columns="#{bindings.XxwsVasCustAcctMappingVO2.hints.ReceivableCcid.displayWidth}"
+                      maximumLength="#{bindings.XxwsVasCustAcctMappingVO2.hints.ReceivableCcid.precision}"
+                      shortDesc="#{bindings.XxwsVasCustAcctMappingVO2.hints.ReceivableCcid.tooltip}"
+                      id="it3">
+          <f:validator binding="#{row.bindings.ReceivableCcid.validator}"/>
+          <af:convertNumber groupingUsed="false"
+                            pattern="#{bindings.XxwsVasCustAcctMappingVO2.hints.ReceivableCcid.format}"/>
+        </af:inputText>
+      </af:column>
+      <af:column sortProperty="#{bindings.XxwsVasCustAcctMappingVO2.hints.DiscountCcid.name}"
+                 filterable="true" sortable="true"
+                 headerText="#{bindings.XxwsVasCustAcctMappingVO2.hints.DiscountCcid.label}"
+                 id="c4">
+        <af:inputText value="#{row.bindings.DiscountCcid.inputValue}"
+                      label="#{bindings.XxwsVasCustAcctMappingVO2.hints.DiscountCcid.label}"
+                      required="#{bindings.XxwsVasCustAcctMappingVO2.hints.DiscountCcid.mandatory}"
+                      columns="#{bindings.XxwsVasCustAcctMappingVO2.hints.DiscountCcid.displayWidth}"
+                      maximumLength="#{bindings.XxwsVasCustAcctMappingVO2.hints.DiscountCcid.precision}"
+                      shortDesc="#{bindings.XxwsVasCustAcctMappingVO2.hints.DiscountCcid.tooltip}"
+                      id="it5">
+          <f:validator binding="#{row.bindings.DiscountCcid.validator}"/>
+          <af:convertNumber groupingUsed="false"
+                            pattern="#{bindings.XxwsVasCustAcctMappingVO2.hints.DiscountCcid.format}"/>
+        </af:inputText>
+      </af:column>
+      <af:column sortProperty="#{bindings.XxwsVasCustAcctMappingVO2.hints.SponsorshipCcid.name}"
+                 filterable="true" sortable="true"
+                 headerText="#{bindings.XxwsVasCustAcctMappingVO2.hints.SponsorshipCcid.label}"
+                 id="c5">
+        <af:inputText value="#{row.bindings.SponsorshipCcid.inputValue}"
+                      label="#{bindings.XxwsVasCustAcctMappingVO2.hints.SponsorshipCcid.label}"
+                      required="#{bindings.XxwsVasCustAcctMappingVO2.hints.SponsorshipCcid.mandatory}"
+                      columns="#{bindings.XxwsVasCustAcctMappingVO2.hints.SponsorshipCcid.displayWidth}"
+                      maximumLength="#{bindings.XxwsVasCustAcctMappingVO2.hints.SponsorshipCcid.precision}"
+                      shortDesc="#{bindings.XxwsVasCustAcctMappingVO2.hints.SponsorshipCcid.tooltip}"
+                      id="it4">
+          <f:validator binding="#{row.bindings.SponsorshipCcid.validator}"/>
+          <af:convertNumber groupingUsed="false"
+                            pattern="#{bindings.XxwsVasCustAcctMappingVO2.hints.SponsorshipCcid.format}"/>
+        </af:inputText>
+      </af:column>
+      <af:column sortProperty="#{bindings.XxwsVasCustAcctMappingVO2.hints.TaxCode.name}"
+                 filterable="true" sortable="true"
+                 headerText="#{bindings.XxwsVasCustAcctMappingVO2.hints.TaxCode.label}"
+                 id="c6">
+        <af:inputText value="#{row.bindings.TaxCode.inputValue}"
+                      label="#{bindings.XxwsVasCustAcctMappingVO2.hints.TaxCode.label}"
+                      required="#{bindings.XxwsVasCustAcctMappingVO2.hints.TaxCode.mandatory}"
+                      columns="#{bindings.XxwsVasCustAcctMappingVO2.hints.TaxCode.displayWidth}"
+                      maximumLength="#{bindings.XxwsVasCustAcctMappingVO2.hints.TaxCode.precision}"
+                      shortDesc="#{bindings.XxwsVasCustAcctMappingVO2.hints.TaxCode.tooltip}"
+                      id="it7">
+          <f:validator binding="#{row.bindings.TaxCode.validator}"/>
+        </af:inputText>
+      </af:column>
+      <af:column sortProperty="#{bindings.XxwsVasCustAcctMappingVO2.hints.StartDate.name}"
+                 filterable="true" sortable="true"
+                 headerText="#{bindings.XxwsVasCustAcctMappingVO2.hints.StartDate.label}"
+                 id="c9">
+        <f:facet name="filter">
+          <af:inputDate value="#{vs.filterCriteria.StartDate}" id="id4"/>
+        </f:facet>
+        <af:inputDate value="#{row.bindings.StartDate.inputValue}"
+                      label="#{bindings.XxwsVasCustAcctMappingVO2.hints.StartDate.label}"
+                      required="#{bindings.XxwsVasCustAcctMappingVO2.hints.StartDate.mandatory}"
+                      shortDesc="#{bindings.XxwsVasCustAcctMappingVO2.hints.StartDate.tooltip}"
+                      id="id1">
+          <f:validator binding="#{row.bindings.StartDate.validator}"/>
+          <af:convertDateTime pattern="#{bindings.XxwsVasCustAcctMappingVO2.hints.StartDate.format}"/>
+        </af:inputDate>
+      </af:column>
+      <af:column sortProperty="#{bindings.XxwsVasCustAcctMappingVO2.hints.EndDate.name}"
+                 filterable="true" sortable="true"
+                 headerText="#{bindings.XxwsVasCustAcctMappingVO2.hints.EndDate.label}"
+                 id="c3">
+        <f:facet name="filter">
+          <af:inputDate value="#{vs.filterCriteria.EndDate}" id="id2"/>
+        </f:facet>
+        <af:inputDate value="#{row.bindings.EndDate.inputValue}"
+                      label="#{bindings.XxwsVasCustAcctMappingVO2.hints.EndDate.label}"
+                      required="#{bindings.XxwsVasCustAcctMappingVO2.hints.EndDate.mandatory}"
+                      shortDesc="#{bindings.XxwsVasCustAcctMappingVO2.hints.EndDate.tooltip}"
+                      id="id3">
+          <f:validator binding="#{row.bindings.EndDate.validator}"/>
+          <af:convertDateTime pattern="#{bindings.XxwsVasCustAcctMappingVO2.hints.EndDate.format}"/>
+        </af:inputDate>
+      </af:column>
+    </af:table>
+  </af:panelCollection>
+</jsp:root>

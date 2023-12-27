@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/training/!svn/ver/209/Wholesale3/WholeSaleProcessApp/WholeSaleProcessUI/public_html/WEB-INF
+END
+faces-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/training/!svn/ver/91/Wholesale3/WholeSaleProcessApp/WholeSaleProcessUI/public_html/WEB-INF/faces-config.xml
+END
+trinidad-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/training/!svn/ver/91/Wholesale3/WholeSaleProcessApp/WholeSaleProcessUI/public_html/WEB-INF/trinidad-config.xml
+END
+adfc-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/training/!svn/ver/247/Wholesale3/WholeSaleProcessApp/WholeSaleProcessUI/public_html/WEB-INF/adfc-config.xml
+END
+ItemTypeAcctTF.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/training/!svn/ver/206/Wholesale3/WholeSaleProcessApp/WholeSaleProcessUI/public_html/WEB-INF/ItemTypeAcctTF.xml
+END
+AccountMappingTF.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/training/!svn/ver/209/Wholesale3/WholeSaleProcessApp/WholeSaleProcessUI/public_html/WEB-INF/AccountMappingTF.xml
+END
+WelcomeTF.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/training/!svn/ver/91/Wholesale3/WholeSaleProcessApp/WholeSaleProcessUI/public_html/WEB-INF/WelcomeTF.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/training/!svn/ver/187/Wholesale3/WholeSaleProcessApp/WholeSaleProcessUI/public_html/WEB-INF/web.xml
+END

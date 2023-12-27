@@ -1,0 +1,52 @@
+10
+
+dir
+213
+https://10.1.2.75/svn/training/Wholesale3/WholeSaleProcessApp/WholeSaleProcessUI
+https://10.1.2.75/svn/training
+
+
+
+2023-02-01T13:28:35.431786Z
+213
+harini
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+220ffc12-e477-614b-b7b1-7fec53eb39f5
+
+WholeSaleProcessUI.jpr
+file
+
+
+
+
+
+457ad19e744b46e3f7666a77f89cf673
+2023-02-01T12:13:27.148668Z
+187
+harini
+
+adfmsrc
+dir
+
+model
+dir
+
+public_html
+dir
+
+src
+dir
+

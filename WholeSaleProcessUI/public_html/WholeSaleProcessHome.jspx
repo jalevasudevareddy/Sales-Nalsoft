@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <f:view>
+    <af:document id="d1">
+      <af:form id="f1">
+        <af:pageTemplate viewId="/oracle/templates/threeColumnTemplate.jspx"
+                         id="pt1">
+          <f:facet name="center">
+            <af:region value="#{bindings.dynamicRegion1.regionModel}" id="r1"
+                       partialTriggers="::cl1 ::cl2 ::cl2"/>
+          </f:facet>
+          <f:facet name="header"/>
+          <f:facet name="end"/>
+          <f:facet name="start">
+            <af:panelList id="pl1">
+              <af:commandLink text="Item Type Wise Natural Account Mapping"
+                              action="#{viewScope.HomePageBean.itemTypeAcctTF}"
+                              id="cl1"/>
+              <af:commandLink text="Account Mapping"
+                              action="#{viewScope.HomePageBean.accountMappingTF}"
+                              id="cl2"/>
+            </af:panelList>
+          </f:facet>
+          <f:facet name="branding"/>
+          <f:facet name="copyright"/>
+          <f:facet name="status"/>
+        </af:pageTemplate>
+      </af:form>
+    </af:document>
+  </f:view>
+</jsp:root>
